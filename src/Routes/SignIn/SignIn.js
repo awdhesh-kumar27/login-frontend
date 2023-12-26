@@ -22,8 +22,8 @@ const SignIn = ()=>{
         event.preventDefault();
         const data = {"username":Email,"password":Password};
         const result = await signInMethod(data);
-        // console.log(data);
-        const resp = result.data.status +" "+ result.data.username;
+        console.log(result);
+        const resp = result.data.message +" "+ result.data.username;
         setResponse(resp);
         setEmail("");
         setPassword("");

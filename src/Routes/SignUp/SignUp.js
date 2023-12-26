@@ -40,7 +40,7 @@ const SignUp = ()=>{
         // console.log(data);
         if(Password === ConfirmPassword){
             const result = await signUpMethod(data);
-            setResponse(result.data.status);
+            setResponse(result.data.message);
         }else{
             //  console.log("Password not matched");
         }
